@@ -1,129 +1,96 @@
-# **Projet de Chat en Temps Réel avec WebSockets et JWT**
+# Chat Application
 
-## 🗓 **Description du Projet**
+## Introduction
 
-Ce projet est une application de chat en temps réel développée avec une architecture moderne, intégrant une communication bidirectionnelle via **WebSockets** et une gestion sécurisée des utilisateurs grâce à des **tokens JWT (JSON Web Tokens)**. L'application permet à plusieurs utilisateurs de communiquer de manière fluide et sécurisée.
+This project is a chat application developed to enhance my familiarity with the Go programming language and strengthen my web development skills. The objective is to explore backend development with Go and efficiently handle real-time communication using WebSockets.
 
-L'objectif de ce projet est de démontrer la maîtrise des technologies backend et frontend pour une application réactive et performante, avec une architecture facilement extensible.
+## Features
 
----
+- **User Authentication:** Simple user login system with JWT token authentication.
+- **Real-time Communication:** Users can send and receive messages instantly.
+- **Frontend:** Developed using React with Material UI for enhanced design.
+- **Backend:** Built with Go for efficient and scalable server-side operations.
+- **WebSocket Integration:** Seamless real-time communication between users.
 
-## 🚀 **Fonctionnalités**
+## Technologies Used
 
-- **Connexion sécurisée** avec authentification via JWT.
-- **Communication en temps réel** grâce à une intégration de WebSockets.
-- Interface utilisateur responsive et conviviale avec **Material UI (MUI)**.
-- Gestion dynamique des messages affichés et défilement automatique vers le dernier message.
-- Affichage en temps réel des messages de différents utilisateurs.
+### Frontend
 
----
+- React
+- Material UI (MUI) for UI components
 
-## 🛠️ **Technologies Utilisées**
+### Backend
 
-### **Frontend**
-- **React** pour la gestion de l'interface utilisateur.
-- **Material UI (MUI)** pour le design et le style des composants.
-- **TypeScript (optionnel selon la version)** pour une meilleure gestion des types.
+- Go (Golang)
+- Gorilla WebSocket package for WebSocket management
+- JSON Web Tokens (JWT) for authentication
 
-### **Backend**
-- **Node.js** et **Express** pour la gestion des requêtes HTTP et WebSocket.
-- **WebSockets (WS)** pour une communication temps réel bidirectionnelle.
-- **JWT (JSON Web Token)** pour une authentification sécurisée des utilisateurs.
+### Tools
 
----
+- Git for version control
+- Postman for API testing
 
-## 🛠️ **Installation et Lancement**
+## Installation & Setup
 
-### **Prérequis**
-- Node.js installé (version >= 14)
-- Git installé
-- Un éditeur de code comme Visual Studio Code
+### Prerequisites
 
-### **Étapes d'installation**
+Ensure you have the following installed:
 
-1. **Clonez le projet depuis GitHub :**
-   ```bash
-   git clone https://github.com/votre-compte/chat-app.git
-   cd chat-app
-   ```
+- Node.js
+- Go (Golang)
+- Git
 
-2. **Installation des dépendances frontend :**
-   ```bash
-   cd chat-frontend
-   npm install
-   ```
+### Instructions
 
-3. **Installation des dépendances backend :**
-   ```bash
-   cd ..
-   cd chat-backend
-   npm install
-   ```
+#### 1. Clone the Repository
 
-4. **Lancer le serveur backend :**
-   ```bash
-   node server.js
-   ```
+```bash
+$ git clone https://github.com/BILALck4/ChatApp_Go.git
+$ cd ChatApp_Go
 
-5. **Lancer le serveur frontend :**
-   ```bash
-   npm start
-   ```
-
-6. **Accédez à l'application :**
-   Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
-
----
-
-## ⚙️ **Architecture**
-
-### **Schéma Simplifié :**
-```
-Frontend (React) <-> WebSocket + HTTP (JWT Auth) <-> Backend (Node.js)
 ```
 
-### **Points Techniques Clés**
-- Séparation nette des responsabilités entre backend (serveur WebSocket + API HTTP) et frontend (gestion des composants UI).
-- Utilisation d'un système sécurisé JWT pour maintenir les sessions utilisateur.
-- Gestion efficace des événements WebSocket pour assurer une synchronisation en temps réel des messages.
+#### 2. Run the Backend
 
----
+```bash
+$ cd backend
+$ go run main.go
+```
 
-## 🫠 **Améliorations Futures**
+#### 3. Run the Frontend
 
-- Intégration d'une base de données pour la persistance des messages.
-- Création de salons de discussion multiples.
-- Ajout d'une gestion des utilisateurs avec profils.
-- Implémentation de tests unitaires et d'intégration.
-- Déploiement sur une plateforme cloud.
+```bash
+$ cd frontend
+$ npm install
+$ npm start
+```
 
----
+#### 4. Access the Application
 
-## 🎨 **Aperçu Visuel**
-![Capture d'écran de l'application](./screenshot.png)
+Open your browser and navigate to `http://localhost:`5173.
 
----
+## Usage
 
-## 💡 **Pourquoi ce Projet ?**
+- **Login:** Enter a username to join the chat.
+- **Chat:** Send and receive messages in real-time.
 
-Ce projet a été développé pour mettre en avant mes compétences en développement fullstack, avec un focus particulier sur :
-- **Communication temps réel** et **gestion sécurisée des utilisateurs**.
-- **Bonne gestion des états** dans une application réactive (frontend).
-- Conception propre et maintenable du code.
+## Project Objectives
 
----
+This project was developed with the following learning objectives:
 
-## 🧑‍💻 **Auteur**
+- Gain a deeper understanding of Go (Golang) as a backend language.
+- Explore WebSocket communication for real-time web applications.
+- Improve my frontend development skills using React and modern UI libraries.
 
-- **Chekhchou Bilal** - Développeur Fullstack.
-- N'hésitez pas à me contacter pour toute question ou collaboration.
+## Future Improvements
 
----
+- **Security Enhancements:** Add more robust authentication and authorization.
+- **User Profiles:** Allow users to have customizable profiles.
+- **Message Storage:** Implement persistent message storage using a database.
+- **Improved UI:** Further enhance the user interface for better user experience.
 
-## 📨 **Contact**
+## Conclusion
 
-- 📧 **Email:** bilal.chekhchou@gmail.com (remplacez par votre adresse)
-- 💼 **LinkedIn:** [CHEKHCHOU Bilal](https://www.linkedin.com/in/bilal-chekhchou-83968b249/)
-- 🌐 **GitHub:** [Mon Github](https://github.com/Bilalck4)
+This project provided valuable insights into full-stack web development with a focus on backend technologies and real-time communication. It was an excellent opportunity to build hands-on experience with Go and frontend technologies. I look forward to enhancing and scaling this project further.
 
 
