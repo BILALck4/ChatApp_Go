@@ -91,6 +91,6 @@ This project was developed with the following learning objectives:
 
 ## Conclusion
 
-This project provided valuable insights into full-stack web development with a focus on backend technologies and real-time communication. It was an excellent opportunity to build hands-on experience with Go and frontend technologies. I look forward to enhancing and scaling this project further.
+This project provided valuable insights into full-stack web development with a focus on backend technologies and real-time communication. It was an excellent opportunity to build hands-on experience with Go and frontend technologies.
 
 
